@@ -1,0 +1,106 @@
+nav {
+    background-color: rgb(66, 97, 155);
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    margin: 0px;
+    list-style-type: none;
+    padding: 5px 0px 5px 0px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 5px 10px 5px 10px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    color: white;
+    border-bottom-style: none;
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li.selected , nav ul li a:hover {
+    color: gold;
+}
+
+body {
+    line-height: 1.3em;
+    font-family: 'Nunito', sans-serif;
+    background-color:rgba(66, 97, 155, 0.096);
+}
+
+section {
+    padding: 20px;
+    border-top: 2px solid gray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    text-align: right;
+    margin-top: 10px;
+    border-top: 1px solid rgb(66, 97, 155);
+    color: black;
+    
+}
+
+.page_hero {
+    text-align: center;
+}
+.photo_text_table {
+    display: table;
+}
+.photo_text_row {
+    display: table-row
+}
+.featured {
+    text-align: center;
+}
+
+.card_deck {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 60px 350px 30px;
+    margin: 0px 10px;
+    background-color: white;
+    vertical-align: middle;
+}
+
+.card_title, .card_foot {
+    background-color: rgb(66, 97, 155);
+    color: white;
+}
+
+.card_foot {
+    padding-top: 5px;
+}
+
+.card_desc {
+    background-color: rgba(100, 148, 237, 0.356);
+    padding: 10px 20px;
+    text-align: left;
+}
+
+#welcome_photo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#welcome_text {
+    display: table-cell;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 25px;
+}

@@ -72,7 +72,7 @@ footer {
 
 .card {
     display: grid;
-    grid-template-rows: 60px auto 30px;
+    grid-template-rows: 60px 400px 30px;
     margin: 0px 10px;
     background-color: white;
     vertical-align: middle;

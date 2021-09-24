@@ -104,3 +104,62 @@ footer {
     text-align: left;
     padding-left: 25px;
 }
+
+.bookcase {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    width: auto;
+    height: auto;
+    background-color: rgba(160, 81, 45, 0.822);
+    border: 20px solid rgba(205, 134, 63, 0.774);
+}
+
+.bookshelf {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    border-bottom-color: peru;
+    border-top-color: rgba(205, 134, 63, 0.774);
+    border-left-color: sienna;
+    border-right-color: sienna;
+    border-width: 18px;
+    border-top-width: 0px;
+    border-style: solid;
+    min-height: 100px;
+    height: auto;
+    vertical-align: bottom;
+
+}
+
+.shelf_front {
+    height: 18px;
+    background-color: rgba(205, 134, 63, 0.774);
+}
+
+.book {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-variant-caps: titling-caps;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: white;
+}
+
+#current_edu, #current_books, #recent_books {
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 140px;
+    width: 100px;
+    background-color: rgb(66, 97, 155);
+}
+
+#current_books {
+    background-color: gold;
+    color: black;
+}
+
+#recent_books {
+
+    background-color: teal

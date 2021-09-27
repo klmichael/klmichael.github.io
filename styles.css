@@ -88,14 +88,14 @@ footer {
 }
 
 .card_desc {
-    background-color: rgba(100, 148, 237, 0.356);
+    background-color: white;
     padding: 10px 20px;
     text-align: left;
 }
 
 #welcome_photo {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 #welcome_text {
@@ -103,6 +103,7 @@ footer {
     vertical-align: top;
     text-align: left;
     padding-left: 25px;
+    padding-right: 25px;
 }
 
 .bookcase {
@@ -155,13 +156,16 @@ footer {
     color: white;
 }
 
-#current_edu, #current_books, #recent_books {
+#current_edu, #current_books, #recent_books, #recent_webinars {
     width: 150px;
-    background-color: rgb(66, 97, 155);
     font-size: 1.3em;
 }
 
-#current_books {
+#current_edu {
+    background-color: rgb(66, 97, 155);
+}
+
+#current_books, #pacmen_title, #pacmen_foot {
     background-color: gold;
     color: black;
 }
@@ -171,10 +175,20 @@ footer {
     color: black;
 }
 
-#recent_books {
+#recent_books, #bus_title, #bus_foot {
     background-color: teal;
 }
 
 #recent {
     background-color: rgb(75, 134, 134);
+}
+
+#recent_webinars {
+    background-color: coral;
+    color: black;
+}
+
+#webinar, #webinar a:link, #webinar a:visited {
+    background-color: rgb(252, 170, 140);
+    color: black;
 }

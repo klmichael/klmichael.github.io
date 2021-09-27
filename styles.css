@@ -137,23 +137,28 @@ footer {
 }
 
 .book {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    
     text-align: center;
     font-variant-caps: titling-caps;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1em;
     line-height: 1.2;
+    color: white;
+    background-color: rgb(95, 118, 160);
+    margin: 15px;
+    min-height: 200px;
+    max-width: 190px;
+    padding: 15px;
+}
+
+.book a:link, .book a:visited {
     color: white;
 }
 
 #current_edu, #current_books, #recent_books {
-    margin-top: 10px;
-    margin-left: 15px;
-    height: 140px;
-    width: 100px;
+    width: 150px;
     background-color: rgb(66, 97, 155);
+    font-size: 1.3em;
 }
 
 #current_books {
@@ -161,7 +166,15 @@ footer {
     color: black;
 }
 
-#recent_books {
+#current, #current a:link, #current a:visited {
+    background-color: rgb(252, 229, 99);
+    color: black;
+}
 
-    background-color: teal
+#recent_books {
+    background-color: teal;
+}
+
+#recent {
+    background-color: rgb(75, 134, 134);
 }

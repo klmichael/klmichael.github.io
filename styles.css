@@ -1,201 +1,205 @@
+/* Element Styling */
+
 nav {
-    background-color: rgb(66, 97, 155);
-    font-family: 'Roboto', sans-serif;
+  background-color: rgb(66, 97, 155);
+  font-family: 'Roboto', sans-serif;
 }
 
 nav ul {
-    margin: 0px;
-    list-style-type: none;
-    padding: 5px 0px 5px 0px;
+  margin: 0px;
+  list-style-type: none;
+  padding: 5px 0px 5px 0px;
 }
 
 nav ul li {
-    display: inline;
-    padding: 5px 10px 5px 10px;
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
 }
 
 nav ul li a:link, nav ul li a:visited {
-    color: white;
-    border-bottom-style: none;
-    text-decoration: none;
-}
-
-a:link, a:visited {
-    color: black;
-    font-weight: bold;
+  color: white;
+  border-bottom-style: none;
+  text-decoration: none;
 }
 
 nav ul li.selected , nav ul li a:hover {
-    color: gold;
+  color: gold;
 }
 
 body {
-    line-height: 1.3em;
-    font-family: 'Nunito', sans-serif;
-    background-color:rgba(66, 97, 155, 0.096);
+  line-height: 1.3em;
+  font-family: 'Nunito', sans-serif;
+  background-color:rgba(66, 97, 155, 0.096);
 }
 
 section {
-    padding: 20px;
-    border-top: 2px solid gray;
+  margin: 10px;
+  border-bottom: 2px solid gray;
+  clear: both;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:link, a:visited {
+  color: black;
+  font-weight: bold;
 }
 
 footer {
-    text-align: right;
-    margin-top: 10px;
-    border-top: 1px solid rgb(66, 97, 155);
-    color: black;
-    
+  text-align: center;
+  margin: 10px;
+  color: black; 
+  clear: both; 
+  font-family: 'Nunito', sans-serif;
 }
 
-.page_hero {
-    text-align: center;
-}
-.photo_text_table {
-    display: table;
-}
-.photo_text_row {
-    display: table-row
-}
-.featured {
-    text-align: center;
+
+/* Arrangement of elements by class */
+
+.float-right {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px;
 }
 
-.card_deck {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: auto-fit;
+.float-left {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+
+/* Text by class */
+
+.center-text {
+  text-align: center;
+}
+ 
+.med-font-size {
+  font-size: 1.3em;
+}
+
+
+/* Color by class */
+
+.blue, .blue a:link, .blue a:visited {
+  background-color: rgb(66, 97, 155);
+  color: white; 
+}
+  
+  .light-blue, .light-blue a:link, .light-blue a:visited {
+  background-color: rgb(101, 120, 155);
+  color: white; 
+}
+  
+  .yellow, .yellow a:link, .yellow a:visited {
+  background-color: gold;
+  color: black; 
+}
+  
+  .light-yellow, .light-yellow a:link, .light-yellow a:visited {
+  background-color: rgb(252, 229, 99);
+  color: black; 
+}
+  
+  .green, .green a:link, .green a:visited {
+  background-color: teal;
+  color: white; 
+}
+  
+  .light-green, .light-green a:link, .light-green a:visited {
+  background-color: rgb(75, 134, 134);
+  color: white; 
+}
+  
+  .orange, .orange a:link, .orange a:visited {
+  background-color: coral;
+  color: black; 
+}
+  
+  .light-orange, .light-orange a:link, .light-orange a:visited {
+  background-color: rgb(252, 170, 140);
+  color: black; 
+}
+
+
+/* Card styling */
+
+.card-deck {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: auto-fit;
 }
 
 .card {
-    display: grid;
-    grid-template-rows: 60px auto auto 30px;
-    margin: 15px 10px;
-    background-color: white;
-    vertical-align: middle;
+  display: grid;
+  grid-template-rows: 60px auto auto 30px;
+  margin: 15px 10px;
+  background-color: white;
+  vertical-align: middle;
 }
 
-.card_title, .card_foot {
-    background-color: rgb(66, 97, 155);
-    color: white;
+.card-foot {
+  padding: 5px;
 }
 
-.card_foot {
-    padding-top: 5px;
+.card-desc {
+  background-color: white;
+  padding: 10px 20px;
+  text-align: left;
 }
 
-.card_desc {
-    background-color: white;
-    padding: 10px 20px;
-    text-align: left;
+.card-video {
+  max-width: 300px;
+  padding: 10px 20px;
+  justify-content: space-evenly;
 }
 
-.card_video {
-    max-width: 300px;
-    padding: 10px 20px;
-    justify-content: space-evenly;
-}
 
-#welcome_photo {
-    display: table-cell;
-    vertical-align: top;
-}
-
-#welcome_text {
-    display: table-cell;
-    vertical-align: top;
-    text-align: left;
-    padding-left: 25px;
-    padding-right: 25px;
-}
+/* Bookcase styling */
 
 .bookcase {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
-    width: auto;
-    height: auto;
-    background-color: rgba(160, 81, 45, 0.822);
-    border: 20px solid rgba(205, 134, 63, 0.774);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  width: auto;
+  height: auto;
+  background-color: rgba(160, 81, 45, 0.822);
+  border: 20px solid rgba(205, 134, 63, 0.774);
 }
 
 .bookshelf {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    border-bottom-color: peru;
-    border-top-color: rgba(205, 134, 63, 0.774);
-    border-left-color: sienna;
-    border-right-color: sienna;
-    border-width: 18px;
-    border-top-width: 0px;
-    border-style: solid;
-    min-height: 100px;
-    height: auto;
-    vertical-align: bottom;
-
+  display: grid;
+  grid-template-columns: 200px auto auto auto auto;
+  border-bottom-color: peru;
+  border-top-color: rgba(205, 134, 63, 0.774);
+  border-left-color: sienna;
+  border-right-color: sienna;
+  border-width: 18px;
+  border-top-width: 0px;
+  border-style: solid;
+  align-items:flex-end;
+  justify-content: space-between;
 }
 
-.shelf_front {
-    height: 18px;
-    background-color: rgba(205, 134, 63, 0.774);
+.shelf-front {
+  height: 18px;
+  background-color: rgba(205, 134, 63, 0.774);
 }
 
-.book {
-    
-    text-align: center;
-    font-variant-caps: titling-caps;
-    font-weight: bold;
-    font-size: 1em;
-    line-height: 1.2;
-    color: white;
-    background-color: rgb(95, 118, 160);
-    margin: 15px;
-    min-height: 200px;
-    max-width: 190px;
-    padding: 15px;
+.book, .book-cover {
+  max-width: 170px;
+  min-height: 200px;
+  margin: 20px 15px 0px 15px;
+  padding: 0px 15px;
 }
 
-.book a:link, .book a:visited {
-    color: white;
-}
-
-#current_edu, #current_books, #recent_books, #recent_webinars {
-    width: 150px;
-    font-size: 1.3em;
-}
-
-#current_edu {
-    background-color: rgb(66, 97, 155);
-}
-
-#current_books, #pacmen_title, #pacmen_foot {
-    background-color: gold;
-    color: black;
-}
-
-#current, #current a:link, #current a:visited {
-    background-color: rgb(252, 229, 99);
-    color: black;
-}
-
-#recent_books, #bus_title, #bus_foot {
-    background-color: teal;
-}
-
-#recent {
-    background-color: rgb(75, 134, 134);
-}
-
-#recent_webinars {
-    background-color: coral;
-    color: black;
-}
-
-#webinar, #webinar a:link, #webinar a:visited {
-    background-color: rgb(252, 170, 140);
-    color: black;
+.book-cover {
+  text-align: center;
+  font-variant-caps: titling-caps;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.2;
 }

@@ -225,7 +225,7 @@ footer {
   .bookshelf {
     display: grid;
     grid-template-columns: auto;
-    align-items:flex-end;
+    align-items: flex-end;
     justify-content: space-between;
   }
 

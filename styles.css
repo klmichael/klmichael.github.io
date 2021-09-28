@@ -97,6 +97,7 @@ footer {
 .card_video {
     max-width: 300px;
     padding: 10px 20px;
+    justify-content: space-evenly;
 }
 
 #welcome_photo {

@@ -172,7 +172,7 @@ footer {
 }
 
 .card-video {
-  max-width: 300px;
+  max-width: 80%;
   padding: 10px 20px;
   justify-self: center;
 }
@@ -224,7 +224,7 @@ footer {
 
   .bookshelf {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     align-items:flex-end;
     justify-content: space-between;
   }

@@ -49,10 +49,11 @@ footer {
   text-align: center;
   margin: 10px;
   color: black; 
-  clear: both; 
   font-family: 'Nunito', sans-serif;
+  border-top: 2px solid gray;
+  clear: left;
+  clear: right;
 }
-
 
 /* Arrangement of elements by class */
 
@@ -75,6 +76,7 @@ footer {
 .border-break {
   border-bottom: 2px solid gray;
   clear: left;
+  clear: right;
 }
 
 /* Text by class */

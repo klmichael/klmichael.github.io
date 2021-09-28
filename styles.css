@@ -67,13 +67,14 @@ footer {
 
 .card_deck {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    width: auto-fit;
 }
 
 .card {
     display: grid;
-    grid-template-rows: 60px 400px 30px;
-    margin: 0px 10px;
+    grid-template-rows: 60px auto auto 30px;
+    margin: 15px 10px;
     background-color: white;
     vertical-align: middle;
 }
@@ -91,6 +92,11 @@ footer {
     background-color: white;
     padding: 10px 20px;
     text-align: left;
+}
+
+.card_video {
+    max-width: 300px;
+    padding: 10px 20px;
 }
 
 #welcome_photo {
